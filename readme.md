@@ -1,11 +1,11 @@
-## DRF_hw1"
+## DRF_hw"
 
-24.1 Вьюсеты и дженерики
+24.2 Сериализаторы
 
 ## Установка
 
 1. **Клонируйте репозиторий:**
-     https://github.com/AlexanderMalach/drf-1.git
+        https://github.com/AlexanderMalach/drf_2.git
 
 2. **Создайте виртуальное окружение и активируйте его:**
     ```sh
