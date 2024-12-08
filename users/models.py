@@ -16,6 +16,7 @@ class Payment(models.Model):
     payment_date = models.DateTimeField(auto_now_add=True)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     payment_method = models.CharField(max_length=10, choices=PAYMENT_METHOD_CHOICES)
+    stripe_session_id = models.CharField(max_length=255, null=True, blank=True, help_text="ID сессии в Stripe")
 
     def __str__(self):
         return f"Платеж пользователя {self.user.email} за {self.course.name if self.course else self.lesson.name}"
